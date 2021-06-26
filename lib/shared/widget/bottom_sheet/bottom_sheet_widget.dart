@@ -9,7 +9,7 @@ class BottomSheetWidget extends StatelessWidget {
   final String secondaryLabel;
   final VoidCallback secondaryOnPressed;
   final String title;
-  final String subTitle;
+  final String subtitle;
   const BottomSheetWidget(
       {Key? key,
       required this.primaryLabel,
@@ -17,7 +17,7 @@ class BottomSheetWidget extends StatelessWidget {
       required this.secondaryLabel,
       required this.secondaryOnPressed,
       required this.title,
-      required this.subTitle})
+      required this.subtitle})
       : super(key: key);
 
   @override
@@ -45,7 +45,7 @@ class BottomSheetWidget extends StatelessWidget {
                           style: TextStyles.buttonBoldHeading,
                           children: [
                             TextSpan(
-                                text: "\n$subTitle",
+                                text: "\n$subtitle",
                                 style: TextStyles.buttonHeading)
                           ],
                         ),
